@@ -1,11 +1,12 @@
-[gd_scene load_steps=18 format=3 uid="uid://br1db2ps7ek1m"]
+[gd_scene load_steps=19 format=3 uid="uid://br1db2ps7ek1m"]
 
 [ext_resource type="Script" uid="uid://bxgev84rtsu81" path="res://Scripts/world.gd" id="1_o06y3"]
 [ext_resource type="Script" uid="uid://dsj46s0cdsw2v" path="res://Scripts/player.gd" id="2_go701"]
 [ext_resource type="Texture2D" uid="uid://calk1hc3ckvuf" path="res://Assets/game_sky.exr" id="2_k7acu"]
+[ext_resource type="Texture2D" uid="uid://cc1gwo330r3g3" path="res://Assets/Gray_prototype_textures.png" id="3_0fj1v"]
 [ext_resource type="Script" uid="uid://dyhu7s6i5yhc2" path="res://Scripts/obstcle_spawner.gd" id="3_5a7ea"]
-[ext_resource type="Texture2D" uid="uid://btokdca00tfqv" path="res://Assets/floor_texture.png" id="3_5v1tr"]
 [ext_resource type="PackedScene" uid="uid://6m04lds2hplk" path="res://Scenes/enemy.tscn" id="4_5ukr8"]
+[ext_resource type="Texture2D" uid="uid://btokdca00tfqv" path="res://Assets/floor_texture.png" id="5_5v1tr"]
 [ext_resource type="PackedScene" uid="uid://bp8e20050st5g" path="res://Scenes/enemy-2.tscn" id="5_o06y3"]
 [ext_resource type="PackedScene" uid="uid://b8ydxs0o40x3l" path="res://Scenes/enemy-3.tscn" id="6_k7acu"]
 
@@ -24,15 +25,15 @@ tonemap_mode = 2
 size = Vector3(10, 1, 500)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ukr8"]
-albedo_color = Color(0, 0.19607843, 1, 1)
-albedo_texture = ExtResource("3_5v1tr")
+albedo_color = Color(0.21176471, 0.27058825, 0.30980393, 1)
+albedo_texture = ExtResource("3_0fj1v")
 uv1_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_o06y3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k7acu"]
-albedo_color = Color(1, 1, 0, 1)
-albedo_texture = ExtResource("3_5v1tr")
+albedo_color = Color(0, 0.2666664, 1, 1)
+albedo_texture = ExtResource("5_5v1tr")
 uv1_triplanar = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5v1tr"]
